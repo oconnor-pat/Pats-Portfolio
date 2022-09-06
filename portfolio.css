@@ -56,6 +56,31 @@ img {
 
 strong { font-weight: var(--fw-bold); } 
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+/* button */
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 
 /* Typography */
 
@@ -88,9 +113,7 @@ margin-bottom: .25em;
 }
 
 .section__subtitle-intro,
-.section__title-experiences,
-.section__title-about,
-.section__title-my-work {
+.section__title-about {
     background: var(--clr-accent);
     font-family: var(--secondary);
     margin-bottom: 1em;
@@ -149,5 +172,46 @@ nav { display: none; }
 
 .my__experience {
     background-color: var(--clr-dark);
+    background-image: url(/Images/james-harrison-vpOeXr5wmR4-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
     color: var(--clr-light);
+    text-align:center;
+}
+
+.section__title-experiences {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title-experiences::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.5;
+}
+
+.experiences {
+    margin-bottom: 4em;
+}
+
+.experience {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 800px) {
+    .experiences {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .experience + .experience {
+        margin-left: 2em;
+    }
 }
