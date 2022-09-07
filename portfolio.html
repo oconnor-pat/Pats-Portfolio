@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a1998143b0.js" crossorigin="anonymous"></script>
+    <title>Pat's Portfolio</title>
+
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/Images/Free_Sample_By_Wix.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#experiences" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title-intro">
+                Hello, my name is <strong>Patrick O'Connor</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle-intro">front-end engineer</p>
+            <img src="/Images/1660653478576.jpg" alt="a picture of me" class="intro__img">
+        </section>
+
+        <!--Experiences-->
+        <section class="my-experience" id="experiences">
+            <h2 class="section__title section__title-experiences">What I've done</h2>
+            <div class="experiences">
+                <div class="experience">
+                    <h3>Development and Design</h3>
+                    <p>My development experience includes building clean and concise code with an emphasis on useability and accesibility.
+                        I've built numerous static web pages in HTML,
+                        used tools such as CSS to implememnt design changes, 
+                        as well as incorporated javascript functionality.
+                    </p>
+                </div> <!--/ experience-->
+                <div class="experience">
+                    <h3>Collaboration</h3>
+                    <p>Have had the pleasure of working with a great volunteer organization
+                        who's goal was to help establish a presence for all gymnasts throughout
+                        the U.S. of all ages and backgrounds. 
+                    </p>
+                </div> <!--/ experience-->
+                <div class="experience">
+                    <h3>Deployment</h3>
+                    <p>Over the course of summer 2022 I had the oppurtinity to work with current
+                        developers within my volunteer organization on a variety of areas. Areas 
+                        such as updating existing code bases, new feature deployment, and debugging. 
+                    </p>
+                </div> <!--/ experience-->
+            </div> <!--/ past-work-->
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title-about">Who I am</h2>
+            <p class="section__subtitle section__subtitle-about">Web Desinger based out of New Jersey</p>
+
+            <div class="about-me__body">
+                <p>Just a little bit about me personally. I've always been a pretty active person throughout my life. Playing sports as a child and well into adulthood
+                    was something I always wanted to make sure I kept up with. Ice hockey was always what I played the most and still do, but very recently my girlfriend
+                    and I have taken a serious interest in hiking (see one such hike in Seattle, Washington pictured here), as well as skiing!
+                </p>
+                <p>I've always had a huge interest in technology and a passion for learning as much as possible about it. Just within the last couple of years I built my
+                    first PC and started my jounrey with learning to code. It's been an amazing process and I couldn't be happier I made the leap into this field. My only
+                    regret is that I didn't start sooner.
+                </p>
+            </div>
+
+            <img src="/Images/IMG_8032.jpg" alt="Me on a hike in seattle" class="about-me__img">
+        </section>
+
+
+        <!-- My Work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title-work">My Work</h2>
+            <p class="section__subtitle section__subtitle-work">Some examples of my work</p>
+
+            <div class="portfolio">
+                <!-- Porfolio item 01-->
+                <a href="portfolio-page.html" class="portfolio__item">
+                    <img src="/Images/2021_acura_tlx_sedan_type-s_fq_oem_1_600.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Porfolio item 01-->
+                <a href="portfolio-page2.html" class="portfolio__item">
+                    <img src="/Images/155311439.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Porfolio item 01-->
+                <a href="portfolio-page3.html" class="portfolio__item">
+                    <img src="/Images/istockphoto-1145237322-612x612.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- email link -->
+            <a href="ocoonor-patrick@outlook.com" class="footer__link">oconnor-patrick@outlook.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/oconnor-pat">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/Patty_boy22">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/patrick-oconnor-445b09172/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="portfolio.js"></script>
+
+    </body>
+</html>
+
